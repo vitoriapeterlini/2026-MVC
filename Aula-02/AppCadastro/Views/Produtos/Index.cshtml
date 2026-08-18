@@ -1,0 +1,27 @@
+
+@model IEnumerable<MVC2026.Produto>
+    @{
+        ViewData["Title"] = "Cadastro de Produtos";
+    }
+
+    <H1></H1>
+
+<h1 class= "text-center text-dark">Cadastro de Produtos</h1>
+
+<table class= "bg-black table table-dark table-hover">
+    <thead>
+        <tr>
+            <td class="fw-bolder">Nome</td>
+            <td class="fw-bolder">Quantidade</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Quantidade</td>
+            </tr>
+        }
+    </tbody>
+</table> 
