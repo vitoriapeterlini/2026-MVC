@@ -1,0 +1,73 @@
+@model Formularios.Models.Cliente
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<div class="container">
+    <H1 class="text-center mt-3 fw-bold">Cadastro de Cliente</H1>
+    <form action="#" method="get">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Id">Código</label>
+                <input type="number" class="form-control" placeholder="Código do cliente" asp-for="Id">
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Nome">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Nome Completo..." asp-for="Nome">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Endereço">Endereço </label>
+                <input type="text" class="form-control" placeholder="Endereço Completo..." asp-for="Endereço">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Bairro">Bairro </label>
+                <input type="text" class="form-control" placeholder="Seu bairro..." asp-for="Bairro">
+            </div> 
+            <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Cidade">Cidade</label>
+                <input type="text" class="form-control" placeholder="Sua Cidade" asp-for="Cidade">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="UF">Unidade Federativa</label>
+                <input type="text" class="form-control" placeholder="Unidade Federativa" asp-for="UF">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="CEP">CEP da Residencia</label>
+                <input type="number" class="form-control" placeholder="00000-000" asp-for="CEP">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="CPF">Cadastro Pessoa Física</label>
+                <input type="number" class="form-control" placeholder="000.000.000-00" asp-for="CPF">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Email">Email Completo</label>
+                <input type="text" class="form-control" placeholder="Email Completo..." asp-for="Email">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Celular">Numero de telefone</label>
+                <input type="number" class="form-control" placeholder="(+00)0000-0000" asp-for="Celular">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="DataNascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" placeholder="Sua Data de Nascimento" asp-for="DataNascimento">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mt-5">
+                <label asp-for="Observação">OBS</label>
+                <input type="text" class="form-control" placeholder="Observação..." asp-for="Observação">
+            </div>
+
+
+             <div class="row mt-5">
+            <div class="col text-center">
+                <input type="reset" value="Limpar" class="w-50 btn-outline-secondary"/>
+            </div>
+            <div class="col text-center">
+                <input type="submit" value="Enviar"class="w-50 btn btn-primary"/>
+            </div>
+
+
+        </div>
+        </div>
+    </form>
+
+</div>
